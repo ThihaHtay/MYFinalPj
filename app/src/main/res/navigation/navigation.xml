@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/openFragment">
+
+    <fragment
+        android:id="@+id/calculateFragment2"
+        android:name="com.example.mydiet.CalculateFragment"
+        android:label="CalculateFragment" />
+    <fragment
+        android:id="@+id/openFragment"
+        android:name="com.example.mydiet.OpenFragment"
+        android:label="fragment_open"
+        tools:layout="@layout/fragment_open" >
+        <action
+            android:id="@+id/action_openFragment_to_calculateFragment2"
+            app:destination="@id/calculateFragment2" />
+        <action
+            android:id="@+id/action_openFragment_to_allFoodFragment"
+            app:destination="@id/allFoodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allFoodFragment"
+        android:name="com.example.mydiet.AllFoodFragment"
+        android:label="fragment_all_food"
+        tools:layout="@layout/fragment_all_food" />
+</navigation>

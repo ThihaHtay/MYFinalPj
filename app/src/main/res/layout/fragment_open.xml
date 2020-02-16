@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OpenFragment">
+
+    <Button
+        android:id="@+id/btn_calbmibmr"
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="Calculate BMI and BMR"
+        android:textSize="25sp"
+        android:textColor="@color/black_full"
+        android:background="@drawable/round_button"
+        />
+
+
+
+    <Button
+        android:id="@+id/btn_food"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="Food Calories"
+        android:textSize="25sp"
+        android:textColor="@color/black_full"
+        android:background="@drawable/round_button"/>
+
+</LinearLayout>
