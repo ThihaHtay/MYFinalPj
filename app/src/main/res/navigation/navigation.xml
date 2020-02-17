@@ -25,5 +25,14 @@
         android:id="@+id/allFoodFragment"
         android:name="com.example.mydiet.AllFoodFragment"
         android:label="fragment_all_food"
-        tools:layout="@layout/fragment_all_food" />
+        tools:layout="@layout/fragment_all_food" >
+        <action
+            android:id="@+id/action_allFoodFragment_to_juiceFragment"
+            app:destination="@id/juiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/juiceFragment"
+        android:name="com.example.mydiet.JuiceFragment"
+        android:label="fragment_juice"
+        tools:layout="@layout/fragment_juice" />
 </navigation>
