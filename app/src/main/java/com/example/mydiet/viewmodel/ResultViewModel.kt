@@ -27,12 +27,14 @@ class ResultViewModel : ViewModel() {
 
 
         var bmr: Double;
+
+        
         if (isMale) {
             bmr =
-                66.47F + (6.24F * weight) + (12.7F * (((valFeet) * 12) + valInches)) - (6.755F * valAge)
+                66.47F + (6.24F * weight) + (12.7F * height) - (6.755F * valAge)
         } else {
             bmr =
-                65.51F + (4.35F * weight) + (4.7F * (((valFeet) * 12) + valInches)) - (4.7F * valAge)
+                655.1F + (4.35F * weight) + (4.7F * height) - (4.7F * valAge)
         }
         bmr = String.format("%.1f", bmr).toDouble()
         val bmrResultOne: String
@@ -93,9 +95,10 @@ class ResultViewModel : ViewModel() {
 
 
     private fun calculateBMI(weight: Int, height: Double): Double {
-        val inchesHeight = height * 12;  //convert to feet to inches
+        //val inchesHeight = height * 12;
+        //convert to feet to inches
         val bmi =
-            weight * 703 / (inchesHeight * inchesHeight)   //Formula: 703 x weight (lbs) / [height (in)]2
+            (weight * 703) / (height*height)   //Formula: 703 x weight (lbs) / [height (in)]2
         return String.format("%.1f", bmi).toDouble(); //round 1 decimal
 
     }

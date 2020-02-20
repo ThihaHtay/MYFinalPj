@@ -5,7 +5,7 @@ data class AllResult(
 
 
     var bmiResult: Double,
-    val bmrResult: Double,
+    var bmrResult: Double,
     val bmrOne:String,
     val bmrTwo:String,
     val bmrThree:String,

@@ -52,7 +52,7 @@ class CalculateFragment : Fragment() {
                     root.findViewById<RadioButton>(radioGroup.checkedRadioButtonId)
                 val gender = radioButton.text.toString().equals("Male")
                 val height =
-                    (Integer.parseInt(etFeet.text.toString()) + (Integer.parseInt(etInches.text.toString()) / 12)).toDouble()
+                    (Integer.parseInt(etFeet.text.toString())*12.0) + (Integer.parseInt(etInches.text.toString())).toDouble()
                 val intent = ResultActivity.newIntent(
                     requireContext(),
                     weight,

@@ -21,9 +21,19 @@ class AllFoodFragment : Fragment() {
         // Inflate the layout for this fragment
         val root: View = inflater.inflate(R.layout.fragment_all_food, container, false)
         var btnjuice =root.findViewById<Button>(R.id.btn_juice)
+        var btnfruit=root.findViewById<Button>(R.id.btn_fruits)
+        var btnmeat=root.findViewById<Button>(R.id.btn_meat)
 
         btnjuice.setOnClickListener{view:View->
             view.findNavController().navigate(R.id.action_allFoodFragment_to_juiceFragment)
+        }
+
+        btnfruit.setOnClickListener{view:View->
+            view.findNavController().navigate(R.id.action_allFoodFragment_to_fruitFragment)
+        }
+
+        btnmeat.setOnClickListener{view:View->
+            view.findNavController().navigate(R.id.action_allFoodFragment_to_meatFragment)
         }
 
         return root

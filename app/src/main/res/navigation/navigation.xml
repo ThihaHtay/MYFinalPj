@@ -29,10 +29,25 @@
         <action
             android:id="@+id/action_allFoodFragment_to_juiceFragment"
             app:destination="@id/juiceFragment" />
+        <action
+            android:id="@+id/action_allFoodFragment_to_fruitFragment"
+            app:destination="@id/fruitFragment" />
+        <action
+            android:id="@+id/action_allFoodFragment_to_meatFragment"
+            app:destination="@id/meatFragment" />
     </fragment>
     <fragment
         android:id="@+id/juiceFragment"
         android:name="com.example.mydiet.JuiceFragment"
         android:label="fragment_juice"
         tools:layout="@layout/fragment_juice" />
+    <fragment
+        android:id="@+id/fruitFragment"
+        android:name="com.example.mydiet.FruitFragment"
+        android:label="fragment_fruit"
+        tools:layout="@layout/fragment_fruit" />
+    <fragment
+        android:id="@+id/meatFragment"
+        android:name="com.example.mydiet.MeatFragment"
+        android:label="MeatFragment" />
 </navigation>

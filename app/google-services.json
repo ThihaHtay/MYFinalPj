@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "731815095638",
+    "firebase_url": "https://diet-2c451.firebaseio.com",
+    "project_id": "diet-2c451",
+    "storage_bucket": "diet-2c451.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731815095638:android:594eb031b73d219f3f3af7",
+        "android_client_info": {
+          "package_name": "com.example.mydiet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "731815095638-vurg6m60pqh1ueanqotf6ud5pv5ljk4o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mydiet",
+            "certificate_hash": "aeeb88ff7971a5b9fe445414e02502ad0605e376"
+          }
+        },
+        {
+          "client_id": "731815095638-otu0si1ssb693mq8d8a84ttjk5f1etl5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH1m2i0aKsJ5lRegiimY7g0vPFVIY_NME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "731815095638-otu0si1ssb693mq8d8a84ttjk5f1etl5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

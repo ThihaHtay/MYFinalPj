@@ -18,18 +18,20 @@
 
     <Button
         android:id="@+id/btn_juice"
-        android:layout_width="180dp"
+        android:layout_width="150dp"
         android:layout_height="150dp"
         android:background="@drawable/round_button"
         android:text="JUICE CALORIES"
         android:textSize="25sp"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_fruits"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintTop_toBottomOf="@id/txt_allfood" />
 
     <Button
         android:id="@+id/btn_fruits"
-        android:layout_width="180dp"
+        android:layout_width="150dp"
         android:layout_height="150dp"
         android:background="@drawable/round_button"
         android:text="FRUITS CALORIES"
@@ -41,18 +43,20 @@
 
     <Button
         android:id="@+id/btn_meat"
-        android:layout_width="180dp"
+        android:layout_width="150dp"
         android:layout_height="150dp"
         android:background="@drawable/round_button"
         android:text="MEAT CALORIES"
         android:textSize="25sp"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_salad"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintTop_toBottomOf="@id/btn_juice" />
 
     <Button
         android:id="@+id/btn_salad"
-        android:layout_width="180dp"
+        android:layout_width="150dp"
         android:layout_height="150dp"
         android:background="@drawable/round_button"
         android:text="SALAD CALORIES"

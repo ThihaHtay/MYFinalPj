@@ -82,4 +82,8 @@
         <item name="android:textSize">@dimen/text_regular_2x</item>
     </style>
 
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+
 </resources>
